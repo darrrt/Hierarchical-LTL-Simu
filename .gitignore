@@ -1,9 +1,17 @@
 __pycache__/
 .vscode/
 ltl2ba
+.catkin_tools
 data/*
 src/__pycache__/
 
 !data/.gitkeep 
 hierarchical_ltl.egg-info/
 .DS_Store
+hierarchial_simulation/build
+hierarchial_simulation/logs
+hierarchial_simulation/devel
+hierarchial_simulation/.catkin_tools
+
+*.mp4
+*.pdf
