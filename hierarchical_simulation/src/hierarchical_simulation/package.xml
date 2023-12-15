@@ -1,6 +1,6 @@
 <package>
 
-  <name>hierarchial_simulation</name>
+  <name>hierarchical_simulation</name>
   <version>0.3.0</version>
   <description>
      An automatically generated package with all the configuration and launch files for using the fanuc_lrmate200id7l with the MoveIt Motion Planning Framework

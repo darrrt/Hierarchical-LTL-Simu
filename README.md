@@ -46,6 +46,11 @@ python main.py --task=nav --case=6 --vis --dot
 python main.py --task=nav --case=8 --vis --dot
 ```
 ## Manipulation Task
+
+```bash
+roslaunch hierarchial_simulation demo_human_fanuc_sim.launch
+```
+
 Two manipulation arms are tasked to assemble some LEGO models given hierarchical LTL specifications.
 ![OOP](./imgs/arm.png)
 ### Case 4
