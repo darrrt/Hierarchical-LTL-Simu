@@ -8,10 +8,10 @@ src/__pycache__/
 !data/.gitkeep 
 hierarchical_ltl.egg-info/
 .DS_Store
-hierarchial_simulation/build
-hierarchial_simulation/logs
-hierarchial_simulation/devel
-hierarchial_simulation/.catkin_tools
+hierarchical_simulation/build
+hierarchical_simulation/logs
+hierarchical_simulation/devel
+hierarchical_simulation/.catkin_tools
 
 *.mp4
 *.pdf
