@@ -1,5 +1,5 @@
 {
-    "task_description": "move leo bricks with H_LTL into the a Beacon Tower",
+    "task_description": "move leo bricks with H_LTL into a bin packing task",
     "writer": "shaojunx@andrew.cmu.edu",
     "config": [
         {
@@ -11,12 +11,12 @@
                 "o": -90
             },
             "des": {
-                "x": 0.036,
-                "y": 0,
+                "x": -0.032,
+                "y": -0.004,
                 "z": 0.011,
-                "o": 0
+                "o": -90
             },
-            "task_id":"p3",
+            "task_id":"p1",
             "state": "init",
             "belong":"fanuc"
         },
@@ -29,8 +29,8 @@
                 "o": -90
             },
             "des": {
-                "x": 0.008,
-                "y": 0.02,
+                "x": -0.032,
+                "y": 0.004,
                 "z": 0.011,
                 "o": -90
             },
@@ -52,7 +52,7 @@
                 "z": 0.011,
                 "o": 0
             },
-            "task_id":"p1",
+            "task_id":"p10",
             "state": "init",
             "belong":"fanuc"
         },
@@ -70,7 +70,7 @@
                 "z": 0.011,
                 "o": -90
             },
-            "task_id":"p4",
+            "task_id":"p11",
             "state": "init",
             "belong":"fanuc"
         },
@@ -84,11 +84,11 @@
             },
             "des": {
                 "x": 0.008,
-                "y": -0.02,
-                "z": 0.021,
+                "y": -0.004,
+                "z": 0.011,
                 "o": -90
             },
-            "task_id":"p11",
+            "task_id":"p6",
             "state": "init",
             "belong":"fanuc"
         },
@@ -102,8 +102,8 @@
             },
             "des": {
                 "x": 0.008,
-                "y": 0.02,
-                "z": 0.021,
+                "y": 0.004,
+                "z": 0.011,
                 "o": -90
             },
             "task_id":"p7",
@@ -124,7 +124,7 @@
                 "z": 0.021,
                 "o": 0
             },
-            "task_id":"p5",
+            "task_id":"p12",
             "state": "init",
             "belong":"fanuc"
         },
@@ -142,7 +142,7 @@
                 "z": 0.021,
                 "o": 0
             },
-            "task_id":"p9",
+            "task_id":"p13",
             "state": "init",
             "belong":"fanuc"
         },
@@ -157,10 +157,10 @@
             "des": {
                 "x": 0.036,
                 "y": 0,
-                "z": 0.031,
+                "z": 0.021,
                 "o": 0
             },
-            "task_id":"p10",
+            "task_id":"p14",
             "state": "init",
             "belong":"fanuc"
         },
@@ -175,10 +175,10 @@
             "des": {
                 "x": -0.02,
                 "y": 0,
-                "z": 0.031,
+                "z": 0.021,
                 "o": 0
             },
-            "task_id":"p6",
+            "task_id":"p15",
             "state": "init",
             "belong":"fanuc"
         },
@@ -193,10 +193,10 @@
             "des": {
                 "x": 0.008,
                 "y": 0.02,
-                "z": 0.031,
+                "z": 0.021,
                 "o": -90
             },
-            "task_id":"p8",
+            "task_id":"p16",
             "state": "init",
             "belong":"fanuc"
         },
@@ -211,10 +211,10 @@
             "des": {
                 "x": 0.008,
                 "y": -0.02,
-                "z": 0.031,
+                "z": 0.021,
                 "o": -90
             },
-            "task_id":"p12",
+            "task_id":"p17",
             "state": "init",
             "belong":"fanuc"
         },
@@ -229,15 +229,15 @@
             "des": {
                 "x": 0.008,
                 "y": -0.016,
-                "z": 0.041,
+                "z": 0.021,
                 "o": -90
             },
-            "task_id":"p13",
+            "task_id":"p18",
             "state": "init",
             "belong":"fanuc"
         },
         {
-            "brick_name": "b28_2_fanuc",
+            "brick_name": "b22_5_fanuc",
             "src": {
                 "x": -0.2,
                 "y": 0.06,
@@ -245,17 +245,17 @@
                 "o": -90
             },
             "des": {
-                "x": 0.008,
-                "y": 0.016,
-                "z": 0.041,
+                "x": 0.016,
+                "y": 0.000,
+                "z": 0.021,
                 "o": -90
             },
-            "task_id":"p14",
+            "task_id":"p9",
             "state": "init",
             "belong":"fanuc"
         },
         {
-            "brick_name": "b16_5_fanuc",
+            "brick_name": "b22_4_fanuc",
             "src": {
                 "x": -0.2,
                 "y": 0.08,
@@ -263,17 +263,17 @@
                 "o": -90
             },
             "des": {
-                "x": 0.036,
+                "x": 0.000,
                 "y": 0,
-                "z": 0.051,
-                "o": 0
+                "z": 0.021,
+                "o": -90
             },
-            "task_id":"p16",
+            "task_id":"p8",
             "state": "init",
             "belong":"fanuc"
         },
         {
-            "brick_name": "b16_6_fanuc",
+            "brick_name": "b22_3_fanuc",
             "src": {
                 "x": -0.2,
                 "y": 0.1,
@@ -281,17 +281,17 @@
                 "o": -90
             },
             "des": {
-                "x": -0.02,
+                "x": -0.016,
                 "y": 0,
-                "z": 0.051,
-                "o": 0
+                "z": 0.021,
+                "o": -90
             },
-            "task_id":"p15",
+            "task_id":"p5",
             "state": "init",
             "belong":"fanuc"
         },
         {
-            "brick_name": "b26_1_fanuc",
+            "brick_name": "b22_2_fanuc",
             "src": {
                 "x": -0.2,
                 "y": 0.12,
@@ -299,12 +299,12 @@
                 "o": -90
             },
             "des": {
-                "x": 0.008,
+                "x": -0.032,
                 "y": 0,
-                "z": 0.051,
-                "o": 0
+                "z": 0.021,
+                "o": -90
             },
-            "task_id":"p17",
+            "task_id":"p4",
             "state": "init",
             "belong":"fanuc"
         },
@@ -317,12 +317,12 @@
                 "o": -90
             },
             "des": {
-                "x": 0.008,
+                "x": -0.048,
                 "y": 0,
-                "z": 0.061,
-                "o": 0
+                "z": 0.021,
+                "o": -90
             },
-            "task_id":"p18",
+            "task_id":"p3",
             "state": "init",
             "belong":"fanuc"
         },{
@@ -334,12 +334,12 @@
                 "o": -90
             },
             "des": {
-                "x": 0.036,
-                "y": 0,
+                "x": -0.032,
+                "y": -0.004,
                 "z": 0.011,
-                "o": 0
+                "o": -90
             },
-            "task_id":"p3",
+            "task_id":"p1",
             "state": "init",
             "belong":"fanuc1"
         },
@@ -352,8 +352,8 @@
                 "o": -90
             },
             "des": {
-                "x": 0.008,
-                "y": 0.02,
+                "x": -0.032,
+                "y": 0.004,
                 "z": 0.011,
                 "o": -90
             },
@@ -375,7 +375,7 @@
                 "z": 0.011,
                 "o": 0
             },
-            "task_id":"p1",
+            "task_id":"p10",
             "state": "init",
             "belong":"fanuc1"
         },
@@ -393,7 +393,7 @@
                 "z": 0.011,
                 "o": -90
             },
-            "task_id":"p4",
+            "task_id":"p11",
             "state": "init",
             "belong":"fanuc1"
         },
@@ -407,11 +407,11 @@
             },
             "des": {
                 "x": 0.008,
-                "y": -0.02,
-                "z": 0.021,
+                "y": -0.004,
+                "z": 0.011,
                 "o": -90
             },
-            "task_id":"p11",
+            "task_id":"p6",
             "state": "init",
             "belong":"fanuc1"
         },
@@ -425,8 +425,8 @@
             },
             "des": {
                 "x": 0.008,
-                "y": 0.02,
-                "z": 0.021,
+                "y": 0.004,
+                "z": 0.011,
                 "o": -90
             },
             "task_id":"p7",
@@ -447,7 +447,7 @@
                 "z": 0.021,
                 "o": 0
             },
-            "task_id":"p5",
+            "task_id":"p12",
             "state": "init",
             "belong":"fanuc1"
         },
@@ -465,7 +465,7 @@
                 "z": 0.021,
                 "o": 0
             },
-            "task_id":"p9",
+            "task_id":"p13",
             "state": "init",
             "belong":"fanuc1"
         },
@@ -480,10 +480,10 @@
             "des": {
                 "x": 0.036,
                 "y": 0,
-                "z": 0.031,
+                "z": 0.021,
                 "o": 0
             },
-            "task_id":"p10",
+            "task_id":"p14",
             "state": "init",
             "belong":"fanuc1"
         },
@@ -498,10 +498,10 @@
             "des": {
                 "x": -0.02,
                 "y": 0,
-                "z": 0.031,
+                "z": 0.021,
                 "o": 0
             },
-            "task_id":"p6",
+            "task_id":"p15",
             "state": "init",
             "belong":"fanuc1"
         },
@@ -516,10 +516,10 @@
             "des": {
                 "x": 0.008,
                 "y": 0.02,
-                "z": 0.031,
+                "z": 0.021,
                 "o": -90
             },
-            "task_id":"p8",
+            "task_id":"p16",
             "state": "init",
             "belong":"fanuc1"
         },
@@ -534,10 +534,10 @@
             "des": {
                 "x": 0.008,
                 "y": -0.02,
-                "z": 0.031,
+                "z": 0.021,
                 "o": -90
             },
-            "task_id":"p12",
+            "task_id":"p17",
             "state": "init",
             "belong":"fanuc1"
         },
@@ -552,15 +552,15 @@
             "des": {
                 "x": 0.008,
                 "y": -0.016,
-                "z": 0.041,
+                "z": 0.021,
                 "o": -90
             },
-            "task_id":"p13",
+            "task_id":"p18",
             "state": "init",
             "belong":"fanuc1"
         },
         {
-            "brick_name": "b28_2_fanuc1",
+            "brick_name": "b22_5_fanuc1",
             "src": {
                 "x": 0.2,
                 "y": 0.06,
@@ -568,17 +568,17 @@
                 "o": -90
             },
             "des": {
-                "x": 0.008,
-                "y": 0.016,
-                "z": 0.041,
+                "x": 0.016,
+                "y": 0.000,
+                "z": 0.021,
                 "o": -90
             },
-            "task_id":"p14",
+            "task_id":"p9",
             "state": "init",
             "belong":"fanuc1"
         },
         {
-            "brick_name": "b16_5_fanuc1",
+            "brick_name": "b22_4_fanuc1",
             "src": {
                 "x": 0.2,
                 "y": 0.08,
@@ -586,17 +586,17 @@
                 "o": -90
             },
             "des": {
-                "x": 0.036,
+                "x": 0.000,
                 "y": 0,
-                "z": 0.051,
-                "o": 0
+                "z": 0.021,
+                "o": -90
             },
-            "task_id":"p16",
+            "task_id":"p8",
             "state": "init",
             "belong":"fanuc1"
         },
         {
-            "brick_name": "b16_6_fanuc1",
+            "brick_name": "b22_3_fanuc1",
             "src": {
                 "x": 0.2,
                 "y": 0.1,
@@ -604,17 +604,17 @@
                 "o": -90
             },
             "des": {
-                "x": -0.02,
+                "x": -0.016,
                 "y": 0,
-                "z": 0.051,
-                "o": 0
+                "z": 0.021,
+                "o": -90
             },
-            "task_id":"p15",
+            "task_id":"p5",
             "state": "init",
             "belong":"fanuc1"
         },
         {
-            "brick_name": "b26_1_fanuc1",
+            "brick_name": "b22_2_fanuc1",
             "src": {
                 "x": 0.2,
                 "y": 0.12,
@@ -622,12 +622,12 @@
                 "o": -90
             },
             "des": {
-                "x": 0.008,
+                "x": -0.032,
                 "y": 0,
-                "z": 0.051,
-                "o": 0
+                "z": 0.021,
+                "o": -90
             },
-            "task_id":"p17",
+            "task_id":"p4",
             "state": "init",
             "belong":"fanuc1"
         },
@@ -640,12 +640,12 @@
                 "o": -90
             },
             "des": {
-                "x": 0.008,
+                "x": -0.048,
                 "y": 0,
-                "z": 0.061,
+                "z": 0.021,
                 "o": -90
             },
-            "task_id":"p18",
+            "task_id":"p3",
             "state": "init",
             "belong":"fanuc1"
         }

@@ -284,7 +284,7 @@ class HLTL_sim():
         self.init_state(pose="src")
         thread.start_new_thread(self.fanuc_HLTL_service_launch,())
         thread.start_new_thread(self.fanuc1_HLTL_service_launch,())
-        thread.start_new_thread(self.test,())
+        thread.start_new_thread(self.hierarchical_task_planning,())
         self.refresh_lego_state()
 
         # rospy.spin()
@@ -391,12 +391,12 @@ class HLTL_sim():
             print("finished_task: ", current_exec_tasks[task_idx])
             current_exec_tasks.pop(task_idx)
             current_exec_robots.pop(task_idx)
-    def test(self):
+    def hierarchical_task_planning(self):
 
         time.sleep(3)
         parser = create_parser()
         args = parser.parse_known_args()[0]
-        
+        args.case=rospy.get_param("/lego_state_refresher/task_case")
         if args.task == "man":
             time_task_element_type_robot_axis, reduced_task_network, type_robots = hierarchical_ltl_planner(args=args)
             self.task_execution(time_task_element_type_robot_axis, reduced_task_network, type_robots)
