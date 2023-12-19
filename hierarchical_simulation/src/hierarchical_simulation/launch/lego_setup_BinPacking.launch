@@ -87,7 +87,7 @@
     </node>
     <arg name = "b22_3_fanuc" default="b22_3_fanuc"/>
     <node name="spawn_b22_3_fanuc" pkg="gazebo_ros" type="spawn_model"
-      args="-param b22_description
+      args="-param b22_description2
             -urdf 
             -x 0
             -y 0
@@ -97,7 +97,7 @@
     </node>
     <arg name = "b22_2_fanuc" default="b22_2_fanuc"/>
     <node name="spawn_b22_2_fanuc" pkg="gazebo_ros" type="spawn_model"
-      args="-param b22_description2
+      args="-param b22_description
             -urdf 
             -x 0
             -y 0
@@ -271,7 +271,7 @@
   </node>
   <arg name = "b22_3_fanuc1" default="b22_3_fanuc1"/>
   <node name="spawn_b22_3_fanuc1" pkg="gazebo_ros" type="spawn_model"
-    args="-param b22_description
+    args="-param b22_description2
           -urdf 
           -x 0
           -y 0
@@ -281,7 +281,7 @@
   </node>
   <arg name = "b22_2_fanuc1" default="b22_2_fanuc1"/>
   <node name="spawn_b22_2_fanuc1" pkg="gazebo_ros" type="spawn_model"
-    args="-param b22_description2
+    args="-param b22_description
           -urdf 
           -x 0
           -y 0
