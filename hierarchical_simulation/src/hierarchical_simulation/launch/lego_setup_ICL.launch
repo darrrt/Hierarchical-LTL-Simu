@@ -3,7 +3,7 @@
     <arg name = "assemble_plate" default="assemble_plate"/>
     <arg name = "assemble_plate_color" default="White" />
     <param name="assemble_plate_description" command="$(find xacro)/xacro 
-                                                      $(find hierarchial_simulation)/urdf/lego_baseplate.xacro
+                                                      $(find hierarchical_simulation)/urdf/lego_baseplate.xacro
                                                       plate_color:=$(arg assemble_plate_color)"/>
     <node name="spawn_assemble_plate" pkg="gazebo_ros" type="spawn_model"
       args="-param assemble_plate_description
@@ -17,7 +17,7 @@
 
     <arg name = "storage_plate" default="storage_plate"/>
     <arg name = "storage_plate_color" default="Grey" />
-    <param name="storage_plate_description" command="$(find xacro)/xacro  $(find hierarchial_simulation)/urdf/lego_baseplate.xacro 
+    <param name="storage_plate_description" command="$(find xacro)/xacro  $(find hierarchical_simulation)/urdf/lego_baseplate.xacro 
                                                     plate_color:=$(arg storage_plate_color)"/>
     <node name="spawn_storage_plate" pkg="gazebo_ros" type="spawn_model"
       args="-param storage_plate_description
@@ -28,11 +28,11 @@
             -model $(arg storage_plate)"
       respawn="false" output="screen">
     </node>
-    <param name="b15_description" command="$(find xacro)/xacro  $(find hierarchial_simulation)/urdf/lego_1x5.xacro 
+    <param name="b15_description" command="$(find xacro)/xacro  $(find hierarchical_simulation)/urdf/lego_1x5.xacro 
                                                     brick_color:='Orange'"/>
-    <param name="b13_description" command="$(find xacro)/xacro  $(find hierarchial_simulation)/urdf/lego_1x3.xacro 
+    <param name="b13_description" command="$(find xacro)/xacro  $(find hierarchical_simulation)/urdf/lego_1x3.xacro 
                                                     brick_color:='Orange'"/>
-    <param name="b11_description" command="$(find xacro)/xacro  $(find hierarchial_simulation)/urdf/lego_1x1.xacro 
+    <param name="b11_description" command="$(find xacro)/xacro  $(find hierarchical_simulation)/urdf/lego_1x1.xacro 
                                                     brick_color:='Blue'"/>
 
 

@@ -1,6 +1,6 @@
 # Python 2/3 compatibility imports
 import rospy 
-from hierarchial_simulation.srv import robot_action,lego_pickup
+from hierarchical_simulation.srv import robot_action,lego_pickup
 import geometry_msgs.msg
 import math
 from tf.transformations import quaternion_from_euler
@@ -138,8 +138,8 @@ def lego_action(brick_name='b14_9',reference_frame='world',x=0,y=0,z=0,orientati
 
 
 if __name__=='__main__':
-    lego_state(config_json=rospy.get_param("/lego_gazebo/hierarchial_simulation/config_json"))
+    lego_state(config_json=rospy.get_param("/lego_gazebo/hierarchical_simulation/config_json"))
 
 
 
-    # lego=lego_state(config_json="/home/xusj/Documents/0LAB/23ChangliuLiu/Hierarchical-LTL/hierarchial_simulation/src/hierarchial_simulation/config/ICL.json")
+    # lego=lego_state(config_json="/home/xusj/Documents/0LAB/23ChangliuLiu/Hierarchical-LTL/hierarchical_simulation/src/hierarchical_simulation/config/ICL.json")

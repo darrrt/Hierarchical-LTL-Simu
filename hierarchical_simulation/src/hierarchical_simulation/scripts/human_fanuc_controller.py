@@ -1,5 +1,5 @@
 import rospy 
-from hierarchial_simulation.srv import robot_action,lego_pickup
+from hierarchical_simulation.srv import robot_action,lego_pickup
 import geometry_msgs.msg
 import math
 from tf.transformations import quaternion_from_euler,euler_from_quaternion

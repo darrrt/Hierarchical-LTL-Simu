@@ -1,6 +1,6 @@
 # Python 2/3 compatibility imports
 import rospy 
-from hierarchial_simulation.srv import robot_action,lego_pickup
+from hierarchical_simulation.srv import robot_action,lego_pickup
 import geometry_msgs.msg
 import math
 import gazebo_msgs.msg 
@@ -17,8 +17,8 @@ import _thread
 DE2RA = math.pi / 180
 from scipy.spatial.transform import Rotation
 import numpy as np
-import sys
-sys.path.append("/home/xusj/Documents/0LAB/23ChangliuLiu/Hierarchical-LTL/")
+import sys,os
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../../../hierarchical_ltl'))
 from hierarchical_LTL import hierarchical_ltl_planner
 
 import argparse
@@ -628,4 +628,4 @@ if __name__=='__main__':
 
 
     # /lego_state_refresher/config_json
-    # lego=lego_state(config_json="/home/xusj/Documents/0LAB/23ChangliuLiu/Hierarchical-LTL/hierarchial_simulation/src/hierarchial_simulation/config/ICL.json")
+    # lego=lego_state(config_json="/home/xusj/Documents/0LAB/23ChangliuLiu/Hierarchical-LTL/hierarchical_simulation/src/hierarchical_simulation/config/ICL.json")

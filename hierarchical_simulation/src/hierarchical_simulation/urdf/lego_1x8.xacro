@@ -27,7 +27,7 @@
         rpy="0 0 ${pi/2}" />
       <geometry>
         <mesh scale="${scale} ${scale} ${scale}"
-          filename="file://$(find hierarchial_simulation)/meshes/lego/b1x8.stl"/>
+          filename="file://$(find hierarchical_simulation)/meshes/lego/b1x8.stl"/>
       </geometry>
       <material
         name="">

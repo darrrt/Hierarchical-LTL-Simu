@@ -3,16 +3,16 @@
 # sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 import networkx as nx
-from .task import Task
-from .buchi_parse import Buchi
+from task import Task
+from buchi_parse import Buchi
 from datetime import datetime
-from .workspace_supermarket import Workspace
-from .specification import Specification
-from . import weighted_ts
-from . import milp
-from .GMAPP import mapp, compute_path_cost
-from .vis_supermarket import plot_workspace
-from .vis_supermarket import vis
+from workspace_supermarket import Workspace
+from specification import Specification
+import weighted_ts
+import milp
+from GMAPP import mapp, compute_path_cost
+from vis_supermarket import plot_workspace
+from vis_supermarket import vis
 from termcolor import colored, cprint
 from sympy.logic.boolalg import to_dnf
 from collections import namedtuple
@@ -20,6 +20,7 @@ from networkx.drawing.nx_agraph import graphviz_layout
 import subprocess
 import argparse
 import matplotlib.pyplot as plt
+import os 
 
 print_red_on_cyan = lambda x: cprint(x, 'blue', 'on_red')
 
@@ -553,14 +554,14 @@ def hierarchical_ltl_planner(args):
             semantic_reduced_task_network.edges[(task.parent, task.element), ((task.parent, task.element))]['label'] = \
             generate_latex_expr(buchi_graph.nodes[edge[0]]['label'],
                                 buchi_graph.nodes[edge[0]]['neg_label'], args.task, args.case) 
-        vis_graph(semantic_reduced_task_network, 'label', 'data/task_network', True)
+        vis_graph(semantic_reduced_task_network, 'label', os.path.join(os.path.dirname(__file__),'data/task_network'), True)
     else:
-        vis_graph(reduced_task_network, 'label', 'data/task_network', True)
+        vis_graph(reduced_task_network, 'label', os.path.join(os.path.dirname(__file__),'data/task_network'), True)
     # ----------------- build routing-like graph -----------------
     ts, task_element_component_clause_literal_node, init_type_robot_node, \
         strict_larger_task_element, incomparable_task_element, larger_task_element, pairwise_or_relation_composite_subtasks = \
             weighted_ts.construct_graph(task_hierarchy, reduced_task_network, composite_subtasks, workspace, True)
-    vis_graph(ts, 'label', 'data/routing_graph')
+    vis_graph(ts, 'label', os.path.join(os.path.dirname(__file__),'data/routing_graph'))
     # ----------------- form MILP to generate timed plan -----------------
     maximal_task_element = [node for node in reduced_task_network.nodes() if reduced_task_network.in_degree(node) == 0]
     robot2teccl = weighted_ts.task_element2robot2eccl(reduced_task_network, task_hierarchy)

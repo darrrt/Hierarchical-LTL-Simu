@@ -12,6 +12,6 @@ hierarchical_simulation/build
 hierarchical_simulation/logs
 hierarchical_simulation/devel
 hierarchical_simulation/.catkin_tools
-
+hierarchical_ltl/data/*
 *.mp4
 *.pdf
